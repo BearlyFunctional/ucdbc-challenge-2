@@ -1,3 +1,28 @@
+<!--
+AS AN employer
+I WANT to view a potential employee's deployed portfolio of work samples
+SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+---
+GIVEN I need to sample a potential employee's previous work
+
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +35,81 @@
 </head>
 
 <body>
-    <h1>Placeholder Text!</h1>
+    <header>
+        <h1>Henry Bell</h1>
+        <ul>
+            <li>
+                <a href="#aboutme">About Me</a>
+            </li>
+            <li>
+                <a href="#mywork">My Work</a>
+            </li>
+            <li>
+                <a href="#mylinks">Links</a>
+
+            </li>
+            <li>
+                <a href="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg">Resume (Placeholder)</a>
+
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section id="aboutme">
+            <h2>About Me</h2>
+            <img src="./assets/imgs/placeholder.jpg" alt="Placeholder">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed sem ac massa pellentesque commodo vitae sit amet tellus. Ut rhoncus, nisi sed condimentum feugiat, sapien odio consequat augue, at dignissim massa ipsum cursus nulla. Etiam semper posuere posuere. Vestibulum et orci nulla. Mauris tortor felis, malesuada sed lacinia at, congue eu leo. Nunc luctus lacus vitae elit pharetra fermentum. Mauris posuere venenatis magna, quis eleifend eros malesuada ac. Morbi est quam, efficitur nec massa imperdiet, scelerisque vehicula est. Vestibulum et enim mollis arcu varius rhoncus. Vestibulum imperdiet et quam sit amet luctus. Pellentesque faucibus euismod elit vitae mattis.
+            </p>
+        </section>
+
+        <section id="mywork">
+            <h2>My Work</h2>
+            <div id="mywork-1">
+                <img src="./assets/imgs/placeholder.jpg" alt="Placeholder">
+                <p>Example 1</p>
+            </div>
+            <div id="mywork-2">
+                <img src="./assets/imgs/placeholder.jpg" alt="Placeholder">
+                <p>Example 2</p>
+            </div>
+            <div id="mywork-3">
+                <img src="./assets/imgs/placeholder.jpg" alt="Placeholder">
+                <p>Example 3</p>
+            </div>
+            <div id="mywork-4">
+                <img src="./assets/imgs/placeholder.jpg" alt="Placeholder">
+                <p>Example 4</p>
+            </div>
+            <div id="mywork-5">
+                <img src="./assets/imgs/placeholder.jpg" alt="Placeholder">
+                <p>Example 5</p>
+            </div>
+        </section>
+
+        <section id="mylinks">
+            <h3>Links</h3>
+            <ul>
+                <li>
+                    <a href="mailto:hjbell123.hb@gmail.com">Email</a>
+                </li>
+                <li>
+                    <a href="https://github.com/BearlyFunctional">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg">Placeholder</a>
+                </li>
+                <li>
+                    <a href="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg">Placeholder</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤ 2023</p> 
+    </footer>
 </body>
 
 </html>

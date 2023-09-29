@@ -31,6 +31,7 @@ header li {
 img {
     padding: 10px 10px 10px 10px;
     background-color: rgb(61, 61, 61);
+    border-radius: 25px;
 }
 
 main {
@@ -76,18 +77,23 @@ main section {
 
 #examples {
     display: flex;
-    justify-content: right;
     margin-left: 0%;
     flex-wrap: wrap;
-    gap: 25px;
     color: white;
+    background-color: rgb(61, 61, 61);
+    border-radius: 25px;
 }
 
 #examples div {
-    flex: 0 1 560px;
-    background-color: rgb(61, 61, 61);
-    text-align: center;
     padding: 10px 10px 10px 10px;
+    text-align: right;
+}
+
+#primaryexample {
+}
+
+.secondaryexamples {
+    display: flow;
 }
 
 
